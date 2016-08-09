@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">AndroidCodeFragment</string>
+    <string name="call_str">拨打电话</string>
+    <string name="call_dial_str">跳转至拨号界面</string>
+    <string name="call_send_sms">发送短信</string>
+    <string name="wake_up_and_unlock_str">唤醒屏幕并解锁</string>
+    <string name="is_application_background_str">判断当前App处于前台还是后台状态</string>
+    <string name="is_sleeping_str">判断当前手机是否处于锁屏(睡眠)状态</string>
+    <string name="is_online_str">判断当前是否有网络连接</string>
+    <string name="is_wifi_connected_str">判断当前是否是WIFI连接状态</string>
+    <string name="install_apk_str">安装APK</string>
+    <string name="is_phone_str">判断当前设备是否为手机</string>
+    <string name="get_device_str">获取当前设备宽高，单位px</string>
+</resources>

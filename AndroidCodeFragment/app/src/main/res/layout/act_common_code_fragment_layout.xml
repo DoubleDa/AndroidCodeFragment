@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/call_str" />
+
+    <Button
+        android:id="@+id/btn_call_dial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/call_dial_str" />
+
+    <Button
+        android:id="@+id/btn_send_sms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/call_send_sms" />
+
+    <Button
+        android:id="@+id/btn_wake_up_and_unlock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/wake_up_and_unlock_str" />
+
+    <Button
+        android:id="@+id/btn_is_application_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/is_application_background_str" />
+
+    <Button
+        android:id="@+id/btn_is_sleeping"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/is_sleeping_str" />
+
+    <Button
+        android:id="@+id/btn_is_online"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/is_online_str" />
+
+    <Button
+        android:id="@+id/btn_is_wifi_connected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/is_wifi_connected_str" />
+
+    <Button
+        android:id="@+id/btn_install_apk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/install_apk_str" />
+
+    <Button
+        android:id="@+id/btn_is_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/is_phone_str" />
+
+    <Button
+        android:id="@+id/btn_get_device"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/get_device_str" />
+</LinearLayout>
