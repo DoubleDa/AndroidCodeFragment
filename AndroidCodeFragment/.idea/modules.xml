@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndroidCodeFragment.iml" filepath="$PROJECT_DIR$/AndroidCodeFragment.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/custom-view-library/custom-view-library.iml" filepath="$PROJECT_DIR$/custom-view-library/custom-view-library.iml" />
       <module fileurl="file://$PROJECT_DIR$/rv-library/rv-library.iml" filepath="$PROJECT_DIR$/rv-library/rv-library.iml" />
       <module fileurl="file://$PROJECT_DIR$/utils-library/utils-library.iml" filepath="$PROJECT_DIR$/utils-library/utils-library.iml" />
     </modules>

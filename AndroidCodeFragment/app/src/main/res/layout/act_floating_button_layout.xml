@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_float_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.dyx.acf.customlibrary.widget.Floatingbutton
+        android:id="@+id/fb_but"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="64dp" />
+</FrameLayout>

@@ -10,6 +10,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/custom-view-library" />
             <option value="$PROJECT_DIR$/rv-library" />
             <option value="$PROJECT_DIR$/utils-library" />
           </set>
@@ -18,6 +19,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/custom-view-library" />
             <option value="$PROJECT_DIR$/rv-library" />
             <option value="$PROJECT_DIR$/utils-library" />
           </set>

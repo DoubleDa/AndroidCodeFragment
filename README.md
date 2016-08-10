@@ -63,3 +63,23 @@ java.lang.SecurityException: getDeviceId: Neither user 10241 nor current process
 
 - [解决方案](http://stackoverflow.com/questions/32742327/neither-user-10102-nor-current-process-has-android-permission-read-phone-state)
 - [推荐阅读](http://droidyue.com/blog/2016/01/17/understanding-marshmallow-runtime-permission/index.html)
+
+### DES3加密算法
+
+```java
+如果我们要使用3DES加密，需要以下几个步骤：
+
+① 传入共同约定的密钥（keyBytes）以及算法（Algorithm），来构建SecretKey密钥对象
+SecretKey deskey = new SecretKeySpec(keyBytes, Algorithm);
+
+② 根据算法实例化Cipher对象。它负责加密/解密
+Cipher c1 = Cipher.getInstance(Algorithm);
+
+③ 传入加密/解密模式以及SecretKey密钥对象，实例化Cipher对象
+c1.init(Cipher.ENCRYPT_MODE, deskey);
+
+④ 传入字节数组，调用Cipher.doFinal()方法，实现加密/解密，并返回一个byte字节数组
+c1.doFinal(src);
+```
+
+

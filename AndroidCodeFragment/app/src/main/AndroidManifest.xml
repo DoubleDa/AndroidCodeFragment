@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.dyx.acf">
 
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
     <application
         android:name=".XApplication"
         android:allowBackup="true"
@@ -17,6 +21,15 @@
             </intent-filter>
         </activity>
         <activity android:name=".view.ui.CommonCodeFragmentAct" />
+        <activity android:name=".view.ui.DES3Act" />
+        <activity android:name=".view.ui.FloatingbuttonAct" />
+        <activity android:name=".view.ui.SudokuAct" />
+        <activity android:name=".view.ui.HeadSetAct" />
+        <activity android:name=".view.ui.MD5Act" />
+        <activity android:name=".view.ui.CameraAutoAct" />
+        <activity android:name=".view.ui.ScreenShotAct" />
+        <activity android:name=".view.ui.VibratorAct" />
+        <activity android:name=".view.ui.QrAct" />
     </application>
 
 </manifest>

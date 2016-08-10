@@ -17,10 +17,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    sourceSets { main { jni.srcDirs = ['src/main/jni', 'src/main/jniLibs/'] } }
+    
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:24.0.0-beta1'
     compile project(':utils-library')
@@ -30,4 +32,8 @@ dependencies {
     compile 'com.jakewharton:butterknife:7.0.1'
     //Logger
     compile 'com.orhanobut:logger:1.15'
+    compile project(':custom-view-library')
+    //
+    compile 'com.android.support:design:22.2.0'
+    compile files('src/main/jniLibs/zxing-core-2.3.0.jar')
 }

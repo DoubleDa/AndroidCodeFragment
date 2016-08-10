@@ -2,5 +2,14 @@
 <resources>
     <string-array name="main_menu">
         <item>36个Android开发常用代码片段</item>
+        <item>3DES加密算法</item>
+        <item>带动画效果的悬浮按钮</item>
+        <item>Android九宫格解锁的实现</item>
+        <item>Android是否插入耳机</item>
+        <item>MD5加密算法</item>
+        <item>实现Android手机摄像头的自动对焦</item>
+        <item>Android手机截屏</item>
+        <item>Android震动工具类</item>
+        <item>Android生成二维码</item>
     </string-array>
 </resources>

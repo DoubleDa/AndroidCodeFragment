@@ -1,1 +1,1 @@
-include ':app', ':utils-library', ':rv-library'
+include ':app', ':utils-library', ':rv-library', ':custom-view-library'

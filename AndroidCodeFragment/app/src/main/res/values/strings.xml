@@ -28,4 +28,13 @@
     <string name="get_phone_type">返回移动终端类型</string>
     <string name="get_network_class">判断手机连接的网络类型(2G,3G,4G)</string>
     <string name="get_network_status">判断当前手机的网络类型(WIFI还是2,3,4G)</string>
+    <string name="encrypt_str">加密</string>
+    <string name="decode_str">解密</string>
+    <string name="nothing_str">加密前</string>
+    <string name="click_me">点我啦！</string>
+    <string name="get_result">获取结果</string>
+    <string name="click_me_camera">拍照</string>
+    <string name="screen_shot_str">截图</string>
+    <string name="start_vibrator">开始震动</string>
+    <string name="qr_error">生成二维码失败</string>
 </resources>
