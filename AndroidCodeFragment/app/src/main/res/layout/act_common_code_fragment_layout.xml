@@ -1,83 +1,208 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btn_call"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/call_str" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btn_call_dial"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/call_dial_str" />
+        <Button
+            android:id="@+id/btn_call"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/call_str" />
 
-    <Button
-        android:id="@+id/btn_send_sms"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/call_send_sms" />
+        <Button
+            android:id="@+id/btn_call_dial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/call_dial_str" />
 
-    <Button
-        android:id="@+id/btn_wake_up_and_unlock"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/wake_up_and_unlock_str" />
+        <Button
+            android:id="@+id/btn_send_sms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/call_send_sms" />
 
-    <Button
-        android:id="@+id/btn_is_application_background"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/is_application_background_str" />
+        <Button
+            android:id="@+id/btn_wake_up_and_unlock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/wake_up_and_unlock_str" />
 
-    <Button
-        android:id="@+id/btn_is_sleeping"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/is_sleeping_str" />
+        <Button
+            android:id="@+id/btn_is_application_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/is_application_background_str" />
 
-    <Button
-        android:id="@+id/btn_is_online"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/is_online_str" />
+        <Button
+            android:id="@+id/btn_is_sleeping"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/is_sleeping_str" />
 
-    <Button
-        android:id="@+id/btn_is_wifi_connected"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/is_wifi_connected_str" />
+        <Button
+            android:id="@+id/btn_is_online"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/is_online_str" />
 
-    <Button
-        android:id="@+id/btn_install_apk"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/install_apk_str" />
+        <Button
+            android:id="@+id/btn_is_wifi_connected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/is_wifi_connected_str" />
 
-    <Button
-        android:id="@+id/btn_is_phone"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/is_phone_str" />
+        <Button
+            android:id="@+id/btn_install_apk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/install_apk_str" />
 
-    <Button
-        android:id="@+id/btn_get_device"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/get_device_str" />
-</LinearLayout>
+        <Button
+            android:id="@+id/btn_is_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/is_phone_str" />
+
+        <Button
+            android:id="@+id/btn_get_device"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/get_device_str" />
+
+        <Button
+            android:id="@+id/btn_get_device_imei"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/get_device_imei" />
+
+        <Button
+            android:id="@+id/btn_get_mac_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/get_mac_address" />
+
+        <Button
+            android:id="@+id/btn_get_app_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/get_app_version" />
+
+        <Button
+            android:id="@+id/btn_collect_device_info_str"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/collect_device_info_str" />
+
+        <Button
+            android:id="@+id/btn_have_sdcard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/have_sdcard" />
+
+        <Button
+            android:id="@+id/btn_hide_soft_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/hide_soft_input" />
+
+        <Button
+            android:id="@+id/btn_toggle_soft_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/toggle_soft_input" />
+
+        <EditText
+            android:id="@+id/et_hide_soft_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/et_hide_soft_input" />
+
+        <Button
+            android:id="@+id/btn_show_soft_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/show_soft_input" />
+
+        <Button
+            android:id="@+id/btn_go_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/go_home" />
+
+        <Button
+            android:id="@+id/btn_get_statusbar_height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/get_statusbar_height" />
+
+        <Button
+            android:id="@+id/btn_get_top_bar_height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/get_top_bar_height" />
+
+        <Button
+            android:id="@+id/btn_get_network_operator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/get_network_operator" />
+
+        <Button
+            android:id="@+id/btn_get_network_operator_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/get_network_operator_name" />
+
+        <Button
+            android:id="@+id/btn_get_phone_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/get_phone_type" />
+
+        <Button
+            android:id="@+id/btn_get_network_class"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/get_network_class" />
+
+        <Button
+            android:id="@+id/btn_get_network_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/get_network_status" />
+
+    </LinearLayout>
+</ScrollView>
