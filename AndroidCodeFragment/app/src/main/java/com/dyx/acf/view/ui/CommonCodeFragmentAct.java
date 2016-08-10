@@ -1,6 +1,13 @@
 package com.dyx.acf.view.ui;
 
+import android.Manifest;
+import android.annotation.TargetApi;
+import android.content.ContextWrapper;
+import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -27,6 +34,7 @@ import butterknife.OnClick;
  * alter remark：
  */
 public class CommonCodeFragmentAct extends BaseActivity {
+    private static final int REQUEST_READ_PHONE_STATE = 1;
     @Bind(R.id.btn_call)
     Button btnCall;
     @Bind(R.id.btn_call_dial)
@@ -138,10 +146,7 @@ public class CommonCodeFragmentAct extends BaseActivity {
                 Logger.d("Width:" + CommonUtils.getDeviceWidth(this) + "|Height:" + CommonUtils.getDeviceHeight(this));
                 break;
             case R.id.btn_get_device_imei:
-                /**
-                 * TODO 6.0权限
-                 */
-                Logger.d(CommonUtils.getDeviceIMEI(this));
+                handleReadPhoneStatus();
                 break;
             case R.id.btn_get_mac_address:
                 Logger.d(CommonUtils.getMacAddress(this));
@@ -193,6 +198,30 @@ public class CommonCodeFragmentAct extends BaseActivity {
                 break;
             case R.id.btn_get_network_status:
                 Logger.d(NetWorkUtils.getNetWorkStatus(this));
+                break;
+            default:
+                break;
+        }
+    }
+
+    @TargetApi(Build.VERSION_CODES.M)
+    private void handleReadPhoneStatus() {
+        int permissionCheck = ContextCompat.checkSelfPermission(this, Manifest.permission.READ_PHONE_STATE);
+        if (permissionCheck != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_PHONE_STATE}, REQUEST_READ_PHONE_STATE);
+        } else {
+
+        }
+    }
+
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        switch (requestCode) {
+            case REQUEST_READ_PHONE_STATE:
+                if (grantResults.length > 0 && (grantResults[0] == PackageManager.PERMISSION_GRANTED)) {
+                    Logger.d(CommonUtils.getDeviceIMEI(this));
+                }
                 break;
             default:
                 break;

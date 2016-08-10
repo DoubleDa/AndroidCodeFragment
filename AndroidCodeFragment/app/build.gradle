@@ -26,6 +26,7 @@ dependencies {
     compile project(':utils-library')
     compile project(':rv-library')
     compile 'com.android.support:recyclerview-v7:23.4.0'
+    //butterknife
     compile 'com.jakewharton:butterknife:7.0.1'
     //Logger
     compile 'com.orhanobut:logger:1.15'
