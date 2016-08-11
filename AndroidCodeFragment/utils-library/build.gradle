@@ -16,12 +16,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    sourceSets { main { jni.srcDirs = ['src/main/jni', 'src/main/jniLibs/'] } }
+    sourceSets { main { jni.srcDirs = ['src/main/jni', 'src/main/libs/'] } }
 }
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:24.0.0-beta1'
-    compile files('src/main/jniLibs/zxing-core-2.3.0.jar')
+    compile files('src/main/libs/zxing-core-2.3.0.jar')
 }

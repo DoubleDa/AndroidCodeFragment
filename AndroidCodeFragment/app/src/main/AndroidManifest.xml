@@ -5,6 +5,8 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
 
     <application
         android:name=".XApplication"
@@ -13,6 +15,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <!--activity-->
         <activity android:name=".view.ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,6 +33,18 @@
         <activity android:name=".view.ui.ScreenShotAct" />
         <activity android:name=".view.ui.VibratorAct" />
         <activity android:name=".view.ui.QrAct" />
+        <activity android:name=".view.ui.InstallApkBackgroundAct" />
+        <activity android:name=".view.ui.showReceiverMsgAct" />
+        <activity android:name=".view.ui.ClickSpaceAct" />
+        <activity android:name=".view.ui.ClearDataAct" />
+        <activity android:name=".view.ui.BreakpointUploadAct" />
+
+        <!--BroadcastReceiver-->
+        <receiver android:name=".receiver.MsgReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

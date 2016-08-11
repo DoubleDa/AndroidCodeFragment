@@ -78,6 +78,21 @@ public class MainActivity extends BaseActivity {
                     case 9:
                         intentTo(QrAct.class);
                         break;
+                    case 10:
+                        intentTo(InstallApkBackgroundAct.class);
+                        break;
+                    case 11:
+                        intentTo(showReceiverMsgAct.class);
+                        break;
+                    case 12:
+                        intentTo(ClickSpaceAct.class);
+                        break;
+                    case 13:
+                        intentTo(ClearDataAct.class);
+                        break;
+                    case 14:
+                        intentTo(BreakpointUploadAct.class);
+                        break;
                     default:
                         break;
                 }

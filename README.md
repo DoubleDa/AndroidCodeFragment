@@ -82,4 +82,9 @@ c1.init(Cipher.ENCRYPT_MODE, deskey);
 c1.doFinal(src);
 ```
 
+### Jar包存储目录问题
+
+一开始将Jar包存储目录命名为“jniLibs”在编译的时候出问题了，后来将Jar包存储目录改为“libs”就ok了。
+
+
 

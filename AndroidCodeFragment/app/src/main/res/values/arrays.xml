@@ -11,5 +11,10 @@
         <item>Android手机截屏</item>
         <item>Android震动工具类</item>
         <item>Android生成二维码</item>
+        <item>Android静默安装和静默卸载</item>
+        <item>Android广播监听短信并显示内容</item>
+        <item>Android点击空白区域隐藏键盘</item>
+        <item>Android清除本地数据缓存</item>
+        <item>Android文件实现断点上传</item>
     </string-array>
 </resources>
