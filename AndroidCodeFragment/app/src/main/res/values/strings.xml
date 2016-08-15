@@ -51,4 +51,7 @@
     <string name="file_name">请输入文件名称……</string>
     <string name="start_upload">开始上传</string>
     <string name="stop_upload">暂停上传</string>
+    <string name="file_not_exist">文件不存在！</string>
+    <string name="sdcard_not_exist">未检测到SD卡</string>
+    <string name="tv_load_more">加载更多……</string>
 </resources>

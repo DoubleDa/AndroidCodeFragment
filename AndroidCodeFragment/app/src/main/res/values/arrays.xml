@@ -16,5 +16,11 @@
         <item>Android点击空白区域隐藏键盘</item>
         <item>Android清除本地数据缓存</item>
         <item>Android文件实现断点上传</item>
+        <item>Android EditText禁止复制粘贴</item>
+        <item>Android最省内存的ViewPager添加小圆点指示器</item>
+        <item>Android CardView简单使用</item>
+        <item>Android上拉刷新列表数据</item>
+        <item>Android颜色转换工具类ColorUtil</item>
+        <item>Android为图片添加水印文字</item>
     </string-array>
 </resources>

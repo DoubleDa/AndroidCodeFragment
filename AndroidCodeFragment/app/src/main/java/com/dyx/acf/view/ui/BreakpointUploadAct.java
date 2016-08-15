@@ -12,12 +12,15 @@ import com.dyx.acf.R;
 import com.dyx.acf.view.base.BaseActivity;
 import com.dyx.utils.library.uploadfile.UploadLogService;
 
+import java.io.File;
+
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 /**
  * Created by dayongxin on 2016/8/11.
+ * TODO 未完成
  */
 public class BreakpointUploadAct extends BaseActivity {
     @Bind(R.id.et_file_name)
@@ -56,31 +59,31 @@ public class BreakpointUploadAct extends BaseActivity {
                 doUploadTask();
                 break;
             case R.id.btn_stop_upload:
+                start = false;
                 break;
         }
     }
 
     private void doUploadTask() {
         start = true;
-        String filename = filenameEditText.getText().toString();
+        String filename = etFileName.getText().toString();
         //判断SDCard是否存在
         if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
             //取得SDCard的目录
             //File uploadFile = new File(Environment.getExternalStorageDirectory(), filename);
             //本地测试使用
             File uploadFile = new File(pathString + "/Android/data/com.mapbar.info.collection/files/cache.zip");
-
             if (uploadFile.exists()) {
                 //开始上传文件
                 uploadFile(uploadFile);
-
             } else {
-
-                Toast.makeText(MainActivity.this, "文件不存在", Toast.LENGTH_SHORT).show();
+                showSnackbar(btnStartUpload, getString(R.string.file_not_exist));
             }
         } else {
-
-            Toast.makeText(MainActivity.this, "未检测到SD卡", Toast.LENGTH_SHORT).show();
+            showSnackbar(btnStartUpload, getString(R.string.sdcard_not_exist));
         }
+    }
+
+    private void uploadFile(final File uploadFile) {
     }
 }

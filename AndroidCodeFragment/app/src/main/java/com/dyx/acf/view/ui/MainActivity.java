@@ -93,6 +93,24 @@ public class MainActivity extends BaseActivity {
                     case 14:
                         intentTo(BreakpointUploadAct.class);
                         break;
+                    case 15:
+                        intentTo(UnableCopyEtAct.class);
+                        break;
+                    case 16:
+                        intentTo(AdViewPagerAct.class);
+                        break;
+                    case 17:
+                        intentTo(CardViewAct.class);
+                        break;
+                    case 18:
+                        intentTo(ScrollUpAct.class);
+                        break;
+                    case 19:
+                        intentTo(AlphaScrollAct.class);
+                        break;
+                    case 20:
+                        intentTo(ImageTextAct.class);
+                        break;
                     default:
                         break;
                 }

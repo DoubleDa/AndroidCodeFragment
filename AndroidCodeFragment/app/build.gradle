@@ -35,4 +35,5 @@ dependencies {
     compile project(':custom-view-library')
     //
     compile 'com.android.support:design:22.2.0'
+    compile 'com.android.support:cardview-v7:24.1.1'
 }
