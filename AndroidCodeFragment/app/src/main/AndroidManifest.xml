@@ -43,6 +43,8 @@
         <activity android:name=".view.ui.CardViewAct" />
         <activity android:name=".view.ui.ScrollUpAct" />
         <activity android:name=".view.ui.ImageTextAct" />
+        <activity android:name=".view.ui.AddCartAnimAct" />
+        <activity android:name=".view.ui.SocketToServerAct" />
 
         <!--BroadcastReceiver-->
         <receiver android:name=".receiver.MsgReceiver">

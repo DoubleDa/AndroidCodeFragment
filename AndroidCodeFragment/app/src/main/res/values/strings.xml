@@ -54,4 +54,16 @@
     <string name="file_not_exist">文件不存在！</string>
     <string name="sdcard_not_exist">未检测到SD卡</string>
     <string name="tv_load_more">加载更多……</string>
+    <string name="add_cart">添加购物车</string>
+
+    <string name="detail_bottom_im_btn">联系卖家</string>
+    <string name="detail_bottom_cart_btn">加入购物车</string>
+    <string name="detail_bottom_buy_btn">立即购买</string>
+    <string name="note_totaobao_btn">去淘宝</string>
+    <string name="goods_detail">商品详情</string>
+    <string name="shopping_cart_added">商品已成功添加到购物车！</string>
+    <string name="shopping_cart_checkout">去结算</string>
+    <string name="shopping_cart_continue">继续购物</string>
+    <string name="et_input_hint">请输入内容……</string>
+    <string name="upload_socket">提交数据到Socket服务器</string>
 </resources>

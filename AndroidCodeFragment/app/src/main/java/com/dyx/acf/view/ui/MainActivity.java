@@ -111,6 +111,12 @@ public class MainActivity extends BaseActivity {
                     case 20:
                         intentTo(ImageTextAct.class);
                         break;
+                    case 21:
+                        intentTo(AddCartAnimAct.class);
+                        break;
+                    case 22:
+                        intentTo(SocketToServerAct.class);
+                        break;
                     default:
                         break;
                 }

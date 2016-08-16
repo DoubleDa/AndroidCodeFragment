@@ -22,5 +22,7 @@
         <item>Android上拉刷新列表数据</item>
         <item>Android颜色转换工具类ColorUtil</item>
         <item>Android为图片添加水印文字</item>
+        <item>网购Android App购物车点击动画实现</item>
+        <item>Android利用Socket与服务器端交互</item>
     </string-array>
 </resources>
