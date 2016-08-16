@@ -117,6 +117,21 @@ public class MainActivity extends BaseActivity {
                     case 22:
                         intentTo(SocketToServerAct.class);
                         break;
+                    case 23:
+                        intentTo(MemoryAct.class);
+                        break;
+                    case 24:
+                        intentTo(TextViewUtilsAct.class);
+                        break;
+                    case 25:
+                        intentTo(TimerUpdateAct.class);
+                        break;
+                    case 26:
+                        intentTo(MyTimerCountAct.class);
+                        break;
+                    case 27:
+                        intentTo(AnimAct.class);
+                        break;
                     default:
                         break;
                 }

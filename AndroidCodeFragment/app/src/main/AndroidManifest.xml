@@ -45,11 +45,23 @@
         <activity android:name=".view.ui.ImageTextAct" />
         <activity android:name=".view.ui.AddCartAnimAct" />
         <activity android:name=".view.ui.SocketToServerAct" />
+        <activity android:name=".view.ui.MemoryAct" />
+        <activity android:name=".view.ui.TextViewUtilsAct" />
+        <activity android:name=".view.ui.TimerUpdateAct" />
+        <activity android:name=".view.ui.MyTimerCountAct" />
+        <activity android:name=".view.ui.AnimAct" />
+        <activity android:name=".view.ui.StartUpAct" />
 
         <!--BroadcastReceiver-->
         <receiver android:name=".receiver.MsgReceiver">
             <intent-filter>
                 <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".receiver.StartUpReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
             </intent-filter>
         </receiver>
     </application>

@@ -66,4 +66,7 @@
     <string name="shopping_cart_continue">继续购物</string>
     <string name="et_input_hint">请输入内容……</string>
     <string name="upload_socket">提交数据到Socket服务器</string>
+    <string name="print_log">打印log信息</string>
+    <string name="span_test">这些课程是学习Android应用开发的绝佳资料。我们通过Github发起开源协作翻译的项目，完成中文版的输出，欢迎大家传阅学习！</string>
+    <string name="start_valid_code">获取验证码</string>
 </resources>

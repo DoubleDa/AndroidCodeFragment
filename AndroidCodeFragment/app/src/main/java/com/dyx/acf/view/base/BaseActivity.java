@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.view.View;
 
+import com.dyx.utils.library.app.AppManager;
+
 /**
  * project name：AndroidCodeFragment
  * class describe：
@@ -19,6 +21,7 @@ public abstract class BaseActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        AppManager.getAppManager().addActivity(this);
     }
 
     public void intentTo(Class<?> cla) {
@@ -30,5 +33,11 @@ public abstract class BaseActivity extends Activity {
             return;
         }
         Snackbar.make(view, msg, Snackbar.LENGTH_SHORT).show();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        AppManager.getAppManager().finishActivity(this);
     }
 }

@@ -24,5 +24,10 @@
         <item>Android为图片添加水印文字</item>
         <item>网购Android App购物车点击动画实现</item>
         <item>Android利用Socket与服务器端交互</item>
+        <item>Android内存管理工具类</item>
+        <item>Android文本框工具类</item>
+        <item>Android Timer定时器更新UI</item>
+        <item>Android获取短信验证码倒计时</item>
+        <item>Android渐变透明、伸缩、平移、旋转动画效果</item>
     </string-array>
 </resources>
